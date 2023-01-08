@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last-challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+    <body id="background-img">
+    <h2 id="clock">00:00:00</h2>
+<div id="section">
+    <span id="todo-background"></span>      
+        <div id="weather">
+        <div>ㅤ</div>
+        <div>ㅤ</div>
+    </div>   
+    <div id="todo-section">
+        <form id="todo-form">
+            <input id="todo-input" type="text" placeholder="Write your To-Do">
+        </form>           
+        <ul id="todo-list"></ul>
+    </div>
+</div>
+
+<div id="date">2023 / 08 / 18 Mon</div>
+    <div id="login-section">
+    <form id="login-Form" class="hidden">
+        <input id="login-input" type="text" placeholder="What's your name?" class="harry-font">
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    </div>  
+    <div id="music">
+        <div>
+        <img src="images/musicimg.jpeg">
+        </div>
+        <audio autoplay>
+            <source src="images/harryost.mp3">
+        </audio>
+    </div>
+    <div id="text">
+        <p>Harry Potter</p>
+    </div>
+    <div id="music-btn">
+        <button id="play">▶️</button>
+        <button id="stop">II</button>
+        <button id="reset">↻</button>
+    </div>
+
+    <svg>
+        <filter id="wavy2">
+        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="20" />-
+        </filter>
+    </svg>
+
+    <script src="app.js"></script>
+    <script src="background.js"></script>
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+    <script src="audio.js"></script>
+</body>
+</html>
